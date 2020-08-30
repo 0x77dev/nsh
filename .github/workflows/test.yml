@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: yarn install
+    - run: yarn run test
+    - run: ./node_modules/.bin/nyc report --reporter text-lcov > coverage.lcov
+    - run: bash < (curl -s https://codecov.io/bash)
+      env:
+          CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
