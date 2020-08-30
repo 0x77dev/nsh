@@ -20,6 +20,6 @@ jobs:
     - run: yarn install
     - run: yarn run test
     - run: ./node_modules/.bin/nyc report --reporter text-lcov > coverage.lcov
-    - run: bash < (curl -s https://codecov.io/bash)
+    - run: curl -s https://codecov.io/bash | bash
       env:
           CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
