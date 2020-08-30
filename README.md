@@ -6,10 +6,10 @@ nsh
 Unix shell powered by JavaScript
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/nsh.svg)](https://npmjs.org/package/nsh)
+[![Version](https://img.shields.io/npm/v/@0x77/nsh.svg)](https://npmjs.org/package/nsh)
 [![Codecov](https://codecov.io/gh/0x77dev/nsh/branch/master/graph/badge.svg)](https://codecov.io/gh/0x77dev/nsh)
-[![Downloads/week](https://img.shields.io/npm/dw/nsh.svg)](https://npmjs.org/package/nsh)
-[![License](https://img.shields.io/npm/l/nsh.svg)](https://github.com/0x77dev/nsh/blob/master/package.json)
+[![Downloads/week](https://img.shields.io/npm/dw/@0x77/nsh.svg)](https://npmjs.org/package/nsh)
+[![License](https://img.shields.io/npm/l/@0x77/nsh.svg)](https://github.com/0x77dev/nsh/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -74,4 +74,3 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0
 
 ---
 Special thanks to [https://bashlogo.com/](https://bashlogo.com/) and [https://prospectone.io/](https://prospectone.io/) for creating bash logo, we took it as a base for our logo.
-
